@@ -1,10 +1,22 @@
-<app-header></app-header>
-<ul>
-  <li *ngFor="let project of projects">
-    <a routerLink="/project/{{project.id}}">
-      <img src="{{project.coverPicture}}" alt="cover picture {{project.name}}">
-      <h1>{{project.name}}</h1>
-    </a>
-  </li>
-</ul>
-<app-contact></app-contact>
+<div class="home">
+  <div class="message-alert">
+    <p>This website is still underconstrction. All the projects are not available for the moment. Please</p>
+  </div>
+  <app-header></app-header>
+  <ul class="projects">
+    <li>
+      <h1>
+        <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
+      </h1>
+    </li>
+    <!-- <li *ngFor="let project of projects" routerLink="/project/{{project.id}}"> -->
+      <li *ngFor="let project of projects">
+
+      <div class="img-size">
+        <img src="{{project.coverPicture}}" alt="cover picture {{project.name}}">
+      </div>
+      <h3>{{project.name}}</h3>
+    </li>
+  </ul>
+  <app-contact></app-contact>
+</div>

@@ -1,0 +1,13 @@
+footer {
+  background-color: #f9f9f9;
+  height: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  b{
+    padding: 0 5px;
+    &:last-child{
+      padding-right: 0px;
+    }
+  }
+}

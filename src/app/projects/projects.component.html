@@ -1,9 +1,11 @@
-<h2> PROJECTS</h2>
-<ul>
-  <li *ngFor="let project of projects">
-    <a routerLink="/project/{{project.id}}">
-      <img src="{{project.coverPicture}}" alt="cover picture {{project.name}}">
-      <h1>{{project.name}}</h1>
-    </a>
-  </li>
-</ul>
+<div class="projects">
+  <h2> PROJECTS</h2>
+  <ul>
+    <li *ngFor="let project of projects">
+      <a routerLink="/project/{{project.id}}">
+        <img src="{{project.coverPicture}}" alt="cover picture {{project.name}}">
+        <h1>{{project.name}}</h1>
+      </a>
+    </li>
+  </ul>
+</div>

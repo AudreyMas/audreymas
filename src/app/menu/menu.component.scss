@@ -1,0 +1,13 @@
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 6%;
+  right: 6%;
+  background-color: #131313e0;
+    z-index: 1;
+  a {
+    padding: 1em;
+    
+  }
+}

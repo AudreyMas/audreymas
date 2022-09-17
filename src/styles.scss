@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+/* Fonts */
+@font-face {
+  font-family: JockeyOne;
+  src: local("JockeyOne"), url(assets/fonts/JockeyOne.ttf) format("truetype");
+}
+@font-face {
+  font-family: KantumruyRegular;
+  src: local("KantumruyRegular"), url(assets/fonts/Kantumruy-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: KantumruyLight;
+  src: local("KantumruyLight"), url(assets/fonts/Kantumruy-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: KantumruyBold;
+  src: local("KantumruyBold"), url(assets/fonts/Kantumruy-Bold.ttf) format("truetype");
+}
+
+// @media (min-width: 1025px) {
+//   h1 {
+//     font-size: 8vw;
+//   }
+// }
+h1 {
+  font-size: 15vw;
+}
+@media (min-width: 763px) {
+  h1 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1441px) {
+  h1 {
+    font-size: 4vw;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "KantumruyRegular", Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+h1,
+.home h1 span,
+.header h1 span {
+  font-family: "JockeyOne", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-weight: normal !important;
+}
+h3 {
+  font-weight: normal !important;
+}
+
+* {
+  font-family: "KantumruyRegular", Arial, Helvetica, sans-serif;
+
+  body {
+    background-color: #0b0b0b;
+    margin: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+
+    a {
+      text-decoration: none;
+      font-weight: lighter;
+      color: #bab4b4;
+      &:hover{
+        color: #f9f9f9;
+      }
+    }
+    ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .projects, .project-details {
+      background-color: #f9f9f9;
+    }
+  }
+}
