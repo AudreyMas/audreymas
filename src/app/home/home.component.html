@@ -10,10 +10,9 @@
       </h1>
     </li>
     <!-- <li *ngFor="let project of projects" routerLink="/project/{{project.id}}"> -->
-      <li *ngFor="let project of projects">
-
-      <div class="img-size">
-        <img src="{{project.coverPicture}}" alt="cover picture {{project.name}}">
+    <li *ngFor="let project of projects">
+      <div class="img-size" style="background-image: url('{{project.coverPicture}}')" aria-label="picture of project">
+        <!-- <img src="{{project.coverPicture}}" alt="cover picture {{project.name}}"> -->
       </div>
       <h3>{{project.name}}</h3>
     </li>
