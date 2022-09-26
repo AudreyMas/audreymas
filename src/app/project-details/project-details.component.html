@@ -82,7 +82,7 @@
           <h5>{{project.tasksSubTitle3}}</h5>
           <p>{{project.tasksSubTitle3Text}}</p>
         </div>
-        <div  class="task-img" style="background-image: url('{{project.picture3}}')"
+        <div  *ngIf="project.picture3!==''" class="task-img" style="background-image: url('{{project.picture3}}')"
           attr.aria-label="picture of {{project.name}}">
         </div>
       </div>
