@@ -1,0 +1,121 @@
+.project-details {
+  .cover-img {
+    margin-right: 10%;
+    height: 600px;
+    border: 2px solid;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .content {
+    h4 {
+      text-transform: uppercase;
+      font-size: 3em;
+      font-family: "JockeyOne", Arial, Helvetica, sans-serif;
+    }
+    .project-details-presentation {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      margin-bottom: 10%;
+      @media (min-width: 1025px) {
+        flex-direction: row;
+      }
+      .left-side {
+        @media (min-width: 1025px) {
+          width: 60%;
+          flex-wrap: wrap;
+        }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        div {
+          padding-bottom: 2%;
+          @media (min-width: 1025px) {
+            padding-right: 1%;
+            width: 40%;
+          }
+        }
+      }
+      .right-side {
+        margin-left: auto;
+        h1 {
+          text-align: end;
+        }
+      }
+    }
+    .project-details-description {
+      margin-bottom: 10%;
+      .overview {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10%;
+        position: relative;
+        h4 {
+          transform: rotate(90deg);
+          position: absolute;
+          left: -4%;
+          top: 50%;
+        }
+        p {
+          margin-left: 3%;
+        }
+      }
+      .sub-title- {
+        &1 {
+          text-align: left;
+          @media (min-width: 1025px) {
+            width: 50%;
+          }
+        }
+        &2 {
+          text-align: right;
+          @media (min-width: 1025px) {
+            width: 50%;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .project-details-tasks {
+      margin-bottom: 10%;
+      .line {
+        width: 20%;
+        height: 3px;
+        background-color: black;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10%;
+      }
+      &-title {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      .task- {
+        &1,
+        &2,
+        &3 {
+          margin-bottom: 5%;
+
+          h5 {
+            font-size: 2em;
+            margin: 0px;
+          }
+          .task-img {
+            width: 80%;
+            background-position: center;
+            background-size: contain;
+            height: 33em;
+            background-repeat: no-repeat;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 1em;
+          }
+        }
+      }
+    }
+  }
+}

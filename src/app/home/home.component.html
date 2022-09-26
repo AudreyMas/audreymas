@@ -1,21 +1,9 @@
 <div class="home">
-  <div class="message-alert">
-    <p>This website is still underconstrction. All the projects are not available for the moment. Please</p>
-  </div>
+    
   <app-header></app-header>
-  <ul class="projects">
-    <li>
-      <h1>
-        <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
-      </h1>
-    </li>
-    <!-- REPLACE WITH THAT <li *ngFor="let project of projects" routerLink="/project/{{project.id}}"> -->
-    <li *ngFor="let project of projects">
-      <div class="img-size" style="background-image: url('{{project.coverPicture}}')" aria-label="picture of project">
-        <!-- <img src="{{project.coverPicture}}" alt="cover picture {{project.name}}"> -->
-      </div>
-      <h3>{{project.name}}</h3>
-    </li>
-  </ul>
+
+  <app-projects></app-projects>
+
   <app-contact></app-contact>
+
 </div>

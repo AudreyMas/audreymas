@@ -1,74 +1,97 @@
 <div *ngIf="project" class="project-details">
-  <img src="{{project.coverPicture}}" alt="cover picture">
-  <h2>{{project.name}}</h2>
-  
-  <div class="detailsProject">
-    <div class="deliverables">
-      <b>Deliverables</b>
-      <ul>
-        <li>{{project.deliverables}}</li>
-      </ul>
-    </div>
-    <div class="deliverables">
-      <b>Tools / Skills</b>
-      <ul>
-        <li>{{project.toolsSkills}}</li>
-      </ul>
-    </div>
-    <div class="myPosition">
-      <b>My position</b>
-      <ul>
-        <li>{{project.myPosition}}</li>
-      </ul>
-    </div>
-    <div class="duration">
-      <b>Duration</b>
-      <ul>
-        <li>{{project.duration}}</li>
-      </ul>
-    </div>
-  
+  <div class="cover-img" style="background-image: url('{{project.coverPicture}}')"
+    attr.aria-label="picture of {{project.name}}">
   </div>
-  
-  
-  <section class="content1">
-    <div class="overview">
-      <h4>OVERVIEW</h4>
-      <p>{{project.overviewText}}</p>
-    </div>
-    <div class="subTitle1">
-      <h5>{{project.subTitle1}}</h5>
-      <p>{{project.subTitle1Text}}</p>
-    </div>
-    <div class="subTitle1">
-      <h5>{{project.subTitle2}}</h5>
-      <p>{{project.subTitle2Text}}</p>
-    </div>
-  </section>
-  
-  <section class="content2">
-    <div class="tasksTitleSection">
-      <h4>{{project.tasksTitleSection}}</h4>
-      <p>{{project.tasksTitleSectionText}}</p>
-    </div>
-    <div class="tasksSubTitle1">
-      <h6>{{project.tasksSubTitle1}}</h6>
-      <p>{{project.tasksSubTitle1Text}}</p>
-      <img src="{{project.picture1}}" alt="picture of project">
-    </div>
-    <div class="tasksSubTitle2">
-      <h6>{{project.tasksSubTitle2}}</h6>
-      <p>{{project.tasksSubTitle2Text}}</p>
-      <img src="{{project.picture2}}" alt="picture of project">
-    </div>
-    <div class="tasksSubTitle3">
-      <h6>{{project.tasksSubTitle3}}</h6>
-      <p>{{project.tasksSubTitle3Text}}</p>
-      <img src="{{project.picture3}}" alt="picture of project">
-    </div>
-  </section>
-  
-  <a href="{{project.linkProject}}">website of {{project.name | uppercase}}</a>
 
-  <button type="button" (click)="goBack()">go back</button>
+  <div class="content">
+
+    <div class="project-details-presentation">
+      <div class="left-side">
+        <div class="deliverables">
+          <b>Deliverables</b>
+          <ul>
+            <li>{{project.deliverables}}</li>
+          </ul>
+        </div>
+        <div class="tools-skills">
+          <b>Tools / Skills</b>
+          <ul>
+            <li>{{project.toolsSkills}}</li>
+          </ul>
+        </div>
+        <div class="my-position">
+          <b>My position</b>
+          <ul>
+            <li>{{project.myPosition}}</li>
+          </ul>
+        </div>
+        <div class="duration">
+          <b>Duration</b>
+          <ul>
+            <li>{{project.duration}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-side">
+        <h1>{{project.name}}</h1>
+      </div>
+    </div>
+
+
+    <section class="project-details-description">
+      <div class="overview">
+        <h4>OVERVIEW</h4>
+        <p>{{project.overviewText}}</p>
+      </div>
+      <div class="sub-title-1">
+        <h4>{{project.subTitle1}}</h4>
+        <p>{{project.subTitle1Text}}</p>
+      </div>
+      <div class="sub-title-2">
+        <h4>{{project.subTitle2}}</h4>
+        <p>{{project.subTitle2Text}}</p>
+      </div>
+    </section>
+
+    <section class="project-details-tasks">
+      <div class="project-details-tasks-title">
+        <div class="line"></div>
+        <h4>{{project.tasksTitleSection}}</h4>
+        <p>{{project.tasksTitleSectionText}}</p>
+      </div>
+      <div class="task-1">
+        <div class="title-text">
+          <h5>{{project.tasksSubTitle1}}</h5>
+          <p>{{project.tasksSubTitle1Text}}</p>
+        </div>
+        <div class="task-img" style="background-image: url('{{project.picture1}}')"
+          attr.aria-label="picture of {{project.name}}">
+        </div>
+      </div>
+      <div class="task-2">
+        <div class="title-text">
+          <h5>{{project.tasksSubTitle2}}</h5>
+          <p>{{project.tasksSubTitle2Text}}</p>
+        </div>
+        <div class="task-img" style="background-image: url('{{project.picture2}}')"
+          attr.aria-label="picture of {{project.name}}">
+        </div>
+      </div>
+      <div class="task-3">
+        <div class="title-text">
+          <h5>{{project.tasksSubTitle3}}</h5>
+          <p>{{project.tasksSubTitle3Text}}</p>
+        </div>
+        <div  class="task-img" style="background-image: url('{{project.picture3}}')"
+          attr.aria-label="picture of {{project.name}}">
+        </div>
+      </div>
+    </section>
+
+    <a href="{{project.linkProject}}">website of {{project.name | uppercase}}</a>
+
+    <button type="button" (click)="goBack()">go back</button>
+
+  </div>
+
 </div>

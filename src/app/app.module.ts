@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { HomeComponent } from './home/home.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AlertMessageComponent } from './alert-message/alert-message.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MessagesComponent } from './messages/messages.component';
     FooterComponent,
     ProjectDetailsComponent,
     HomeComponent,
-    MessagesComponent
+    MessagesComponent,
+    AlertMessageComponent
   ],
   imports: [
     BrowserModule,

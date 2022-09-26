@@ -35,6 +35,7 @@ h1 {
   }
 }
 
+
 h1,
 h2,
 h3,
@@ -45,7 +46,7 @@ h5 {
 }
 
 h1,
-.home h1 span,
+.home h1 span, .projects h1 span,
 .header h1 span {
   font-family: "JockeyOne", Arial, Helvetica, sans-serif;
 }
@@ -82,6 +83,9 @@ h3 {
 
     .projects, .project-details {
       background-color: #f9f9f9;
+    }
+    .projects, .contacts, .footer, .project-details .content{
+      padding: 10%;
     }
   }
 }

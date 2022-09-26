@@ -1,6 +1,42 @@
-a, button{
-  cursor: pointer;
-}
-.selected {
-  background-color: red;
+.projects {
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    // cursor: not-allowed;
+    cursor: pointer;
+    width: 100%;
+    padding: 2em 0;
+
+    .img-size {
+      height: 600px;
+      border: 2px solid;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    li {
+      width: 45%;
+      padding: 0 0 9em;
+      &:first-child {
+        width: 10%;
+        .img-size {
+          height: 100%;
+        }
+      }
+      &:nth-child(2) {
+        width: 80%;
+        .img-size {
+          height: 100%;
+        }
+      }
+      h1 {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }

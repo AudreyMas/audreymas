@@ -1,11 +1,13 @@
-<div class="projects">
-  <h2> PROJECTS</h2>
-  <ul>
-    <li *ngFor="let project of projects">
-      <a routerLink="/project/{{project.id}}">
-        <img src="{{project.coverPicture}}" alt="cover picture {{project.name}}">
-        <h1>{{project.name}}</h1>
-      </a>
-    </li>
-  </ul>
-</div>
+<ul class="projects">
+  <li>
+    <h1>
+      <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
+    </h1>
+  </li>
+  <li *ngFor="let project of projects" routerLink="/project/{{project.id}}">
+    <div class="img-size" style="background-image: url('{{project.coverPicture}}')"
+      attr.aria-label="picture of {{project.name}}">
+    </div>
+    <h3>{{project.name}}</h3>
+  </li>
+</ul>
