@@ -2,8 +2,8 @@ export interface Project {
   id: number;
   name: string;
   coverPicture:string;
-  deliverables: [string, string, string, string, string, string, string, string, string ];
-  toolsSkills: [string, string, string, string, string, string, string, string];
+  deliverables: any;
+  toolsSkills: any;
   myPosition: string;
   duration: string;
   overviewText: string;

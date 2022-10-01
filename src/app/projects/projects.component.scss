@@ -10,7 +10,7 @@
     padding: 2em 0;
 
     .img-size {
-      height: 600px;
+      height: 500px;
       border: 2px solid #0b0b0b;
       background-position: center;
       background-size: cover;
@@ -23,7 +23,7 @@
 
   @media (min-width: 1025px) {
     li {
-      width: 45%;
+      width: 30%;
       padding: 0 0 9em;
       &:first-child {
         width: 10%;

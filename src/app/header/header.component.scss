@@ -11,28 +11,34 @@
   .titles {
     display: flex;
     align-items: center;
-    @media (min-width: 1440px) {
-      margin-left: 5%;
+    justify-content: center;
+    width: 100vw;
+    margin-left: 5%;
+
+    @media (min-width: 1025px) {
+      width: auto;
     }
+    // @media (min-width: 1440px) {
+    //   margin-left: 5%;
+    // }
 
     h1 {
       display: flex;
       flex-direction: column;
       @media (min-width: 1025px) {
         font-size: 2em;
-span{
-  font-size: 2em;
-}
+        span {
+          font-size: 2em;
+        }
       }
-
     }
-    .h2Ttles,
+    h2{
+      margin-left: -1.7em;
+    }
+    h2,
     h3 {
       transform: rotate(90deg);
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      width: 17em;
+      // width: 17em;
       height: 100%;
     }
   }
