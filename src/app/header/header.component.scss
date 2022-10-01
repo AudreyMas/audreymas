@@ -4,8 +4,8 @@
   align-items: center;
   flex-direction: column;
 
-  @media (min-width: 1440px) {
-    height: 100vh;
+  @media (min-width: 1025px) {
+    // height: 100vh;
     flex-direction: row;
   }
   .titles {
@@ -18,6 +18,13 @@
     h1 {
       display: flex;
       flex-direction: column;
+      @media (min-width: 1025px) {
+        font-size: 2em;
+span{
+  font-size: 2em;
+}
+      }
+
     }
     .h2Ttles,
     h3 {
@@ -37,11 +44,12 @@
     @media (min-width: 1440px) {
       position: absolute;
       right: -6%;
-      p.text, .socials {
+      p.text,
+      .socials {
         width: 50%;
+      }
     }
-    }
-   
+
     .socials {
       display: flex;
       flex-direction: row;

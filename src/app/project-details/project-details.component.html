@@ -64,7 +64,7 @@
           <h5>{{project.tasksSubTitle1}}</h5>
           <p>{{project.tasksSubTitle1Text}}</p>
         </div>
-        <div class="task-img" style="background-image: url('{{project.picture1}}')"
+        <div *ngIf="project.picture1!==''" class="task-img" style="background-image: url('{{project.picture1}}')"
           attr.aria-label="picture of {{project.name}}">
         </div>
       </div>
@@ -73,7 +73,7 @@
           <h5>{{project.tasksSubTitle2}}</h5>
           <p>{{project.tasksSubTitle2Text}}</p>
         </div>
-        <div class="task-img" style="background-image: url('{{project.picture2}}')"
+        <div *ngIf="project.picture2!==''" class="task-img" style="background-image: url('{{project.picture2}}')"
           attr.aria-label="picture of {{project.name}}">
         </div>
       </div>
@@ -82,15 +82,16 @@
           <h5>{{project.tasksSubTitle3}}</h5>
           <p>{{project.tasksSubTitle3Text}}</p>
         </div>
-        <div  *ngIf="project.picture3!==''" class="task-img" style="background-image: url('{{project.picture3}}')"
+        <div *ngIf="project.picture3!==''" class="task-img" style="background-image: url('{{project.picture3}}')"
           attr.aria-label="picture of {{project.name}}">
         </div>
       </div>
     </section>
 
-    <a href="{{project.linkProject}}">website of {{project.name | uppercase}}</a>
-
-    <button type="button" (click)="goBack()">go back</button>
+    <div class="link-back">
+      <a href="{{project.linkProject}}" target="_blank=">The website</a>
+      <!-- <button type="button" (click)="goBack()">go back</button> -->
+    </div>
 
   </div>
 

@@ -11,9 +11,13 @@
 
     .img-size {
       height: 600px;
-      border: 2px solid;
+      border: 2px solid #0b0b0b;
       background-position: center;
       background-size: cover;
+      transition: 0.5s;
+      &:hover{
+        border: 2px solid #f9f9f9;
+      }
     }
   }
 

@@ -67,10 +67,14 @@ h3 {
     width: 100vw;
     overflow-x: hidden;
 
+    button{
+      transition: 0.5s;
+    }
     a {
       text-decoration: none;
       font-weight: lighter;
       color: #bab4b4;
+      transition: 0.5s;
       &:hover{
         color: #f9f9f9;
       }

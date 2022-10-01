@@ -1,0 +1,1034 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Overlock:400,900,900italic,700,700italic,400italic);
+
+/** font pour gros titres**/
+
+@import url(https://fonts.googleapis.com/css?family=Signika);
+
+/** font pour le texte et menu***/
+
+
+
+html,
+body {
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+h1,
+h2,
+h3,
+{
+    font-family: 'Overlock', cursive;
+}
+
+footer {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+footer div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo img {
+    width: 281px;
+}
+
+
+footer {
+    background-color: #99CC33;
+    text-align: center;
+    padding: 30px 0 30px 0px;
+    width: 100%;	
+}
+
+footer.row {
+    margin-top: 60px;
+}
+  
+/***********************************************************PAGE ACCUEIL***************************************************/
+
+#bkg_accueil {
+    background-color:#00ACD1;
+}
+
+#bkg_accueil a {
+    font-family: 'Overlock', cursive;
+    font-size: 23px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+#bkg_accueil #facebook .col-lg-1 {
+	width: 8.33333333%;
+    padding: 0px;
+    margin-left: -43px;
+    position: absolute;
+    margin-top: 200px;position: fixed;
+    z-index: 1000;
+    margin-top: 200px;
+}
+
+#bkg_accueil #facebook .col-lg-1:hover {
+    margin-left: -33px;
+}
+
+
+
+
+
+
+	
+/*******FENETRES*****/
+
+.row.fenetre {
+    padding: 0px 1%;
+}
+
+#fenetre1 {
+    background-image: url(../img/bkg_fenetre_1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 61px;
+    width: 280px;
+    height: 331px;
+	padding: 149px 0px 0px 0px;
+	margin-left: auto;
+
+}
+#fenetre1:hover {
+    background-image:url(../img/bkg_fenetre_1_fond.svg);
+    
+}
+#fenetre2 {
+    background-image: url(../img/bkg_fenetre_2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 280px;
+    height: 309px;
+    padding: 149px 0px 0px 0px;
+	    margin-right: auto;
+}
+#fenetre2:hover {
+    background-image:url(../img/bkg_fenetre_2_fond.svg);
+    
+}
+
+#fenetre3 {
+    background-image:url(../img/bkg_fenetre_3.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 280px;
+    height: 274px;
+    padding: 108px 0px 0px 0px;
+	margin-left: auto;
+
+}
+#fenetre3:hover {
+    background-image:url(../img/bkg_fenetre_3_fond.svg);  
+}
+
+#fenetre4 {
+    background-image:url(../img/bkg_fenetre_4.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 280px;
+    height: 283px;
+    padding: 108px 0px 0px 0px;
+	margin-right: auto;
+}
+
+#fenetre4:hover {
+    background-image:url(../img/bkg_fenetre_4_fond.svg);    
+}
+
+
+
+
+
+
+
+/***********************************************************PAGES INTERNES***************************************************/
+#bkg_page .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#bkg_page .container p,
+h3 {
+    text-align: left;
+}
+#bkg_page .container p {
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 18px;
+    padding: 0px;
+}
+#bkg_page h1 {
+    font-family: 'Overlock', cursive;
+    font-size: 35px;
+    color: #cccccc;
+    text-decoration: underline;
+    border-bottom: 3px #cccccc;
+}
+#bkg_page h2 {
+    font-family: 'Overlock', cursive;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#bkg_page h3 {
+    font-family: 'Overlock', cursive;
+    font-size: 18px;
+    color: #99CC33;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+}
+
+
+
+/***************MENU*****************/
+
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+    /*margin-right: -15px;
+    margin-left: -15px;*/
+    box-shadow: 0px 8px 12px rgba(85, 85, 85, 0.08);
+}
+
+.container-fluid {
+    /*position: fixed;*/
+    background-color: #fff;
+	/*margin-top: -257px;*/
+}
+.navbar-inverse {
+    background: none;
+    border: none;
+}
+.navbar .navbar-nav {
+    display:block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar-inverse .navbar-nav>li>a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+	text-align: left;
+}
+
+
+/******entrees du menu******/
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/**sous menu*/
+.navbar-nav .open .dropdown-menu {
+    position: none;
+    margin-top: 0;
+    background-color: white;
+    border: 0;
+    -webkit-box-shadow: none;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color:#000;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #000000;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    padding-top: 0px;
+}
+
+
+
+
+
+/***************Facebook fixed**********/
+
+#facebook .col-lg-1 {
+    width: 8.33333333%;
+    padding: 0px;
+    margin-left: -42px;
+    position: fixed;
+	z-index: 1000;
+	margin-top: -300px;
+}
+#facebook .col-lg-1:hover {
+    width: 8.33333333%;
+    padding: 0px;
+    margin-left: -32px;
+}
+
+
+
+
+
+/**********MENU REPONSIVE*****************/
+.navbar {
+    /*position: fixed;*/
+    min-height: 0px;
+    margin-bottom: 0px;
+    border: none;
+	padding-left: 1%;
+}
+
+.navbar-toggle {
+	float:left;
+}
+
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background: none;
+}
+.navbar-inverse .navbar-toggle {
+    border: none;
+}
+.navbar-toggle:focus {
+    outline: 0;
+}
+
+
+/** entree facebook menu repsonsive**/
+.nav>li>a>img {
+    max-width: none;
+    width: 25%;
+}
+
+li#facebook_responsive {
+    background-color: #3B5998;
+	 background-image:url(../img/facebook_responsive.svg);
+	 background-repeat:no-repeat;
+   background-size:60px;
+   background-position-x: 7px;
+   height: 48px;
+}
+li#facebook_responsive:hover {
+   background-image:url(../img/facebook_responsive_hover.svg);
+   background-repeat:no-repeat;
+   background-size:60px;
+   background-color:#FFF;
+}
+
+
+
+
+
+
+
+
+/************************BLOCS DE TEXTES ***************/
+
+.row.bloc {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0px 8px 12px rgba(85, 85, 85, 0.08);
+}
+
+
+.bloc {
+    padding: 20px 0px 20px 0px;
+    box-shadow: 0px 8px 12px rgba(85, 85, 85, 0.08);
+}
+.bloc a {
+    color: #00ACD1;
+    text-decoration: underline;
+}
+.bloc a:hover {
+    text-decoration: none;
+}
+.bloc p {
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    color: #666666;
+    font-weight: 400;
+}
+
+/*border des blocs de text*/
+
+.textdroit {
+    border-right: solid 8px;
+}
+.textgauche {
+    border-left: solid 8px;
+}
+
+
+
+/*****************ENTREES MENU + BLOC DE CHAQUE PAGES************/
+/*****************Accueil********************/
+
+#Accueil{
+    border-left: solid 4px #99CC33;
+}
+#Accueil a:focus,
+#Accueil a:hover {
+    background-color: #99CC33;
+	color: #fff;
+}
+
+/***************Solidarcite***************/
+
+#Solidarcite {
+    border-left: solid 4px #ffcc33;
+}
+#Solidarcite a:focus,
+#Solidarcite a:hover {
+    background-color: #ffcc33;
+		color: #fff;
+
+}
+
+/***************projets***************/
+
+#projets {
+    border-left: solid 4px #FF9100;
+}
+#projets a:focus,
+#projets a:hover {
+    background-color: #FF9100;
+		color: #fff;
+
+}
+
+/*sous-menu*/
+
+#projets ul:hover li {
+    background-color: #FF9100;
+}
+#projets ul li {
+    /*float: left;*/
+    background-color: white;
+}
+#projets ul li a:hover {
+    background-color: white;
+    color: black;
+}
+.projets #Contact a {
+    background-color: #FF9100;
+    color: white;
+}
+
+/*bloc*/
+
+.projets .textdroit {
+    border-left: solid 10px #FF9100;
+}
+.projets .textgauche {
+    border-right: solid 10px #FF9100;
+}
+.projets .bloc h2 {
+    color: #FF9100;
+}
+
+/***************Aide_individuelle***************/
+
+#Aide_individuelle {
+    border-left: solid 4px #99CC33;
+}
+#Aide_individuelle a:focus,
+#Aide_individuelle a:hover {
+    background-color: #99CC33;
+		color: #fff;
+
+}
+
+/*sous-menu*/
+
+#Aide_individuelle ul:hover li {
+    background-color: #99CC33;
+}
+#Aide_individuelle ul li {
+    /*float: left;*/
+    background-color: white;
+}
+#Aide_individuelle ul li a:hover {
+    background-color: white;
+    color: black;
+}
+.Aide_individuelle #Aide_individuelle a {
+    background-color: #99CC33;
+    color: white;
+}
+
+/*bloc*/
+
+.Aide_individuelle .textgauche {
+    border-left: solid 10px #99CC33;
+}
+.Aide_individuelle .textdroit {
+    border-right: solid 10px #99CC33;
+}
+.Aide_individuelle .bloc h2 {
+    color: #99CC33;
+}
+
+/****************Vie_institutionelle***************/
+
+#Vie_institutionelle {
+    border-left: solid 4px #ffcc33;
+}
+#Vie_institutionelle a:focus,
+#Vie_institutionelle a:hover {
+    background-color: #ffcc33;
+	color: #fff;
+
+}
+
+/*sous-menu*/
+
+#Vie_institutionelle ul:hover li {
+    background-color: #ffcc33;
+}
+#Vie_institutionelle ul li {
+    /*/*float: left;*/
+    background-color: white;
+}
+#Vie_institutionelle ul li a:hover {
+    background-color: white;
+    color: black;
+}
+.Vie_institutionelle #Vie_institutionelle a {
+    background-color: #ffcc33;
+    color: white;
+}
+
+/**border**/
+
+.Vie_institutionelle .bloc h2 {
+    color: #ffcc33;
+}
+.Vie_institutionelle .textdroit {
+    border-color: #ffcc33;
+}
+.Vie_institutionelle .textgauche {
+    border-color: #ffcc33;
+}
+
+/**icon pdf**/
+
+.row.iconpdf a {
+    display: inline-block;
+    padding: 5px;
+}
+.row.iconpdf img {
+    width: 70%;
+}
+.row.iconpdf {
+    padding-top: 20px;
+}
+
+
+/****************contact****************/
+
+#Contact {
+    border-left: solid 4px #FF9100;
+}
+#Contact a:focus,
+#Contact a:hover {
+    background-color: #FF9100;
+	color: #fff;
+
+}
+
+/*sous-menu*/
+
+#Contact ul:hover li {
+    background-color: #FF9100;
+}
+#Contact ul li {
+    /*float: left;*/
+    background-color: white;
+}
+#Contact ul li a:hover {
+    background-color: white;
+    color: black;
+}
+.Contact #Contact a {
+    background-color: #FF9100;
+    color: white;
+}
+.Contact h2 {
+    color: #FF9100;
+}
+
+/**border**/
+
+.Contact .textdroit {
+    border-color: #FF9100;
+}
+.Contact .textgauche {
+    border-color: #FF9100;
+}
+
+
+
+/* Extra small devices (phones, up to 480px) */
+
+
+/* No media query since this is the default in Bootstrap */
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media(min-width:768px) {
+	
+/**********************/
+
+/***********************/
+
+
+#logo img{
+	width:350px;
+}
+
+/***********************************************************PAGE ACCUEIL***************************************************/
+    #bkg_accueil {
+		    background-color: #fff;
+        background-image: url(../img/bg_maison.svg);
+        background-repeat: no-repeat;
+        background-size: 133%;
+        background-position: center, center;
+        background-position-y: 1%;
+        width: 100%;
+    }
+	
+	#bkg_accueil a {
+    font-family: 'Overlock', cursive;
+    font-size: 26px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+}
+    
+	
+	
+/*******FENETRES*****/
+
+.row.fenetre {
+    padding: 0px 4%;
+}
+#fenetre1 {
+    width: 310px;
+    height: 331px;
+	margin:-9px 10px 10px 10px;
+}
+
+#fenetre2 {
+    width: 310px;
+    height: 309px;
+	margin:13px 10px 10px 10px;
+}
+
+
+#fenetre3 {
+    width: 310px;
+    height: 274px;
+	margin:10px 10px 10px 10px;
+	padding-top:109px;
+}
+
+
+#fenetre4 {
+    background-size: 100%;
+    width: 274px;
+    height: 278px;
+	margin:10px 10px 10px 10px;
+	padding-top:109px;
+}
+
+
+
+/***********************************************************PAGES INTERNES***************************************************/
+    /******menu********/
+	.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.navbar .navbar-nav {
+    display:inline-block;
+}
+	
+	
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+        box-shadow: none;
+    }
+    .container-fluid {
+        /**centrer le menu**/
+        position: relative;
+		margin-top:0px;
+    }
+    
+    #logoAmos {
+        width: 30%;
+    }
+	
+	.navbar-inverse .navbar-nav>li>a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Signika', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+	text-align: left;	
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #000000;
+    white-space: nowrap;
+    font-size: 16px;
+}
+	
+	    /*****************************Entrees menu******************************/
+	/*****************ACCUEIL********************/
+
+#Accueil {
+    border-bottom: solid 4px #99CC33;
+	border-left:none;
+}
+
+
+/***************Solidarcite***************/
+
+#Solidarcite {
+    border-bottom: solid 4px #ffcc33;
+	border-left:none;
+}
+
+
+/***************projets***************/
+
+#projets {
+    border-bottom: solid 4px #FF9100;
+	border-left:none;
+}
+
+
+/***************Aide_individuelle***************/
+
+#Aide_individuelle {
+    border-bottom: solid 4px #99CC33;
+	border-left:none;
+}
+
+
+/****************Vie_institutionelle***************/
+
+#Vie_institutionelle {
+    border-bottom: solid 4px #ffcc33;
+	border-left:none;
+}
+
+
+/****************contact****************/
+
+#Contact {
+    border-bottom: solid 4px #FF9100;
+	border-left:none;
+}
+	
+	
+	
+	
+}
+
+/* Medium devices (tablets, 992px and up) */
+
+@media (min-width: 992px) {
+/***********************************************************PAGE ACCUEIL***************************************************/
+
+#bkg_accueil {
+   background-size: 132%;
+   background-position-y: -50px;
+}
+
+#bkg_accueil a{
+	font-size: 30px;
+}
+    
+	
+	
+/*******FENETRES*****/
+
+.row.fenetre {
+    padding: 0px 8%;
+}
+#fenetre1 {
+    width: 368px;
+    height: 380px;
+	padding-top: 168px;
+}
+
+#fenetre2 {
+    width: 368px;
+    height: 368px;
+	padding-top: 168px;
+}
+
+
+#fenetre3 {
+    width: 368px;
+    height: 324px;
+	padding-top: 127px;
+}
+
+
+#fenetre4 {
+    width: 323px;
+    height: 326px;
+	padding-top: 127px;
+}
+
+
+
+
+
+
+
+/***********************************************************PAGES INTERNES***************************************************/
+    /******menu********/
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+        box-shadow: none;
+    }
+    .container-fluid {
+        /**centrer le menu**/
+        position: relative;
+		
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        padding: 10px;
+    }
+	
+	
+/*****************************Entrees menu******************************/
+	/*****************ACCUEIL********************/
+
+#Accueil {
+    border-bottom: solid 4px #99CC33;
+	border-left:none;
+}
+
+
+/***************Solidarcite***************/
+
+#Solidarcite {
+    border-bottom: solid 4px #ffcc33;
+	border-left:none;
+}
+
+
+/***************projets***************/
+
+#projets {
+    border-bottom: solid 4px #FF9100;
+	border-left:none;
+}
+
+
+/***************Aide_individuelle***************/
+
+#Aide_individuelle {
+    border-bottom: solid 4px #99CC33;
+	border-left:none;
+}
+
+
+/****************Vie_institutionelle***************/
+
+#Vie_institutionelle {
+    border-bottom: solid 4px #ffcc33;
+	border-left:none;
+}
+
+
+/****************contact****************/
+
+#Contact {
+    border-bottom: solid 4px #FF9100;
+	border-left:none;
+}
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	  /**logo**/
+#logoAmos {
+        width: 20%;
+}
+
+/***********************************************************PAGE ACCUEIL***************************************************/
+#bkg_accueil {
+       background-size: 1500px;
+}
+   
+	
+	
+/*******FENETRES*****/
+
+.row.fenetre {
+    padding: 0px 8%;
+}
+#fenetre1 {
+    width: 456px;
+    height: 460px;
+	padding: 219px 52px 0px 80px;
+	margin:10px 10px 10px 10px;
+
+}
+ 
+#fenetre2 {
+	width: 456px;
+    height: 460px;
+    padding: 219px 126px 0px 80px;
+	margin:13px 10px 10px 10px;
+}
+
+
+#fenetre3 {
+    width: 456px;
+    height: 402px;
+    padding: 159px  52px 0px 80px;
+	margin:10px 10px 10px 10px;
+
+}
+
+
+#fenetre4 {
+    width: 400px;
+    height: 402px;
+    padding: 159px  52px 0px 80px;
+	margin:10px 10px 10px 10px;
+}
+
+
+
+
+/***********************************************************PAGES INTERNES***************************************************/
+   
+ #bkg_page .container p {
+        font-size: 18px;
+    }
+    #bkg_page h1 {
+        font-size: 40px;
+    }
+    #bkg_page h2 {
+        font-size: 40px;
+        margin: 0px;
+    }
+    #bkg_page h3 {
+        font-size: 22px;
+        margin-bottom: 22px;
+    }
+   
+   
+   
+    
+/*****************************Entrees menu******************************/
+	/*****************ACCUEIL********************/
+
+#Accueil {
+    border-bottom: solid 4px #99CC33;
+	border-left:none;
+}
+
+
+/***************Solidarcite***************/
+
+#Solidarcite {
+    border-bottom: solid 4px #ffcc33;
+	border-left:none;
+}
+
+
+/***************projets***************/
+
+#projets {
+    border-bottom: solid 4px #FF9100;
+	border-left:none;
+}
+
+
+/***************Aide_individuelle***************/
+
+#Aide_individuelle {
+    border-bottom: solid 4px #99CC33;
+	border-left:none;
+}
+
+
+/****************Vie_institutionelle***************/
+
+#Vie_institutionelle {
+    border-bottom: solid 4px #ffcc33;
+	border-left:none;
+}
+
+
+/****************contact****************/
+
+#Contact {
+    border-bottom: solid 4px #FF9100;
+	border-left:none;
+}
+
+ 
+	
+}
