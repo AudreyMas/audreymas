@@ -5,7 +5,6 @@
   flex-direction: column;
 
   @media (min-width: 1025px) {
-    // height: 100vh;
     flex-direction: row;
   }
   .titles {
@@ -18,10 +17,6 @@
     @media (min-width: 1025px) {
       width: auto;
     }
-    // @media (min-width: 1440px) {
-    //   margin-left: 5%;
-    // }
-
     h1 {
       display: flex;
       flex-direction: column;
@@ -38,7 +33,6 @@
     h2,
     h3 {
       transform: rotate(90deg);
-      // width: 17em;
       height: 100%;
     }
   }
@@ -55,7 +49,6 @@
         width: 50%;
       }
     }
-
     .socials {
       display: flex;
       flex-direction: row;
