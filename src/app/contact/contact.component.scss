@@ -1,8 +1,49 @@
-.contact{
-  padding: 10%;
+.contact {
+  padding: 20% 10%;
   color: #f9f9f9;
-  a{
+  position: relative;
+  a {
     padding-left: 1em;
   }
+  h1 {
+    padding-bottom: 20%;
+  }
 
+  @media (min-width: 1025px) {
+    padding: 10%;
+    h1 {
+      padding: 0%;
+      display: flex;
+      flex-direction: column;
+      span {
+        &:nth-child(1) {
+          padding-left: 20px;
+        }
+        &:nth-child(2) {
+          padding-left: 20 * 4px;
+        }
+        &:nth-child(3) {
+          padding-left: 20 * 8px;
+        }
+        &:nth-child(4) {
+          padding-left: 20 * 12px;
+        }
+        &:nth-child(5) {
+          padding-left: 20 * 16px;
+        }
+        &:nth-child(6) {
+          padding-left: 20 * 20px;
+        }
+        &:nth-child(7) {
+          padding-left: 20 * 24px;
+        }
+      }
+    }
+
+    .infos-contact {
+      position: absolute;
+      top: 20%;
+      right: 10%;
+    }
+  }
 }

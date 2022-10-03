@@ -8,6 +8,7 @@
   }
 
   .content {
+    padding-bottom: 0%;
     h4 {
       text-transform: uppercase;
       font-size: 3em;
@@ -114,7 +115,7 @@
           .task-img {
             width: 80%;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
             height: 33em;
             background-repeat: no-repeat;
             margin-left: auto;
