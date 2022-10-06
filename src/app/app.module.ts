@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';  
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 import { HomeComponent } from './home/home.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AlertMessageComponent } from './alert-message/alert-message.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { AlertMessageComponent } from './alert-message/alert-message.component';
     ProjectDetailsComponent,
     HomeComponent,
     MessagesComponent,
-    AlertMessageComponent
+    AlertMessageComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
